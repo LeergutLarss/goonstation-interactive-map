@@ -1,9 +1,13 @@
 
 #map { 
-    height: 100vh; 
-    
+    height: 100vh;
 }
 
 body {
     margin: 0px;
+}
+
+
+img {
+    image-rendering: pixelated;
 }
