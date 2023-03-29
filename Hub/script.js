@@ -1,5 +1,5 @@
 
-const images = ['goonstation-interactive-map/Atlas/images/atlas-1.png', 'goonstation-interactive-map/Cogmap1/images/cogmap-1.png', 'goonstation-interactive-map/Cogmap2/images/cogmap2-1.png'];
+const images = ['https://leergutlarss.github.io/goonstation-interactive-map/Atlas/images/atlas-1.png', 'https://leergutlarss.github.io/goonstation-interactive-map/Cogmap1/images/cogmap-1.png', 'https://leergutlarss.github.io/goonstation-interactive-map/Cogmap2/images/cogmap2-1.png'];
 
 function createNodes(imageSource) {
 
