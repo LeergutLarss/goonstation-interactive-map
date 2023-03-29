@@ -9,7 +9,7 @@ function createNodes(imageSource) {
         const mapName = document.createElement('p2');
 
         mapContainer.classList.add('mapNode');
-        mapContainer.href = source.slice(source.indexOf('p/') + 2, source.indexOf('/i')) + '/index.html';
+        mapContainer.href = source.slice(0, source.indexOf('/i')) + '/index.html';
 
         mapImage.src = source;
         mapContainer.appendChild(mapImage);
