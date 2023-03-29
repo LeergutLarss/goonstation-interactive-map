@@ -10,6 +10,7 @@ function createNodes(imageSource) {
 
         mapContainer.classList.add('mapNode');
         mapContainer.href = source.slice(0, source.indexOf('/i')) + '/index.html';
+
         mapImage.src = source;
         mapContainer.appendChild(mapImage);
 
