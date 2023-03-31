@@ -25,5 +25,7 @@ cd ~/ss13/goonstation/
 
 for d in ${mapName[@]}
 do    
-        dmm-tools minimap ./maps/$d.dmm -o ~/ss13/goonstation-interactive-map/$directory --enable only-pipenet
+        i=0
+        dmm-tools minimap ./maps/$d.dmm -o ~/ss13/goonstation-interactive-map/${directory[i]}/images/ --enable only-pipenet
+        i=$i+1
 done    
