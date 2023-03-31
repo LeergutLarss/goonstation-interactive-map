@@ -1,6 +1,7 @@
 #!/bin/bash
 cd ~/ss13/goonstation-interactive-map/
 
+# Gather maps to generate
 mapName=()
 
 for d in ./*/
@@ -19,9 +20,17 @@ do
 
 done
 
+# Generate map images
 cd ~/ss13/goonstation/
 
 for d in ${mapName[@]}
 do    
         dmm-tools minimap ./maps/$d.dmm -o ~/ss13/goonstation-interactive-map/DMM-tools/Images --enable only-pipenet
 done    
+
+# Rename map images
+cd ~/ss13/goonstation-interactive-map/DMM-tools/Images
+
+for images in ./*.png; do
+    mv "$images" "${images%-1.png}-pipe.png"
+done
