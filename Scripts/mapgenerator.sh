@@ -10,8 +10,9 @@ do
     then
         continue
     else
-        directory+=($d)
+        
         d="${d%"${d##*[!/]}"}" # extglob-free multi-trailing-/ trim
+        directory+=($d)
         d="${d##*/}"                  # remove everything before the last /
         d=${d:-/} 
         d=${d,}
@@ -24,5 +25,5 @@ cd ~/ss13/goonstation/
 
 for d in ${mapName[@]}
 do    
-        dmm-tools minimap ./maps/$d.dmm -o ~/ss13/goonstation-interactive-map/Test --enable only-pipenet
+        dmm-tools minimap ./maps/$d.dmm -o ~/ss13/goonstation-interactive-map/$directory --enable only-pipenet
 done    
