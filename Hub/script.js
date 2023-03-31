@@ -1,5 +1,5 @@
 
-const images = ['Atlas/images/atlas-1.png', 'Clarion/images/clarion-1.png', 'Cogmap1/images/cogmap-1.png', 'Cogmap2/images/cogmap2-1.png', 'Nadir/images/nadir-1.png', 'Oshan/images/oshan-1.png'];
+const images = ['Atlas/images/atlas-1.png', 'Clarion/images/clarion-1.png', 'Cogmap/images/cogmap-1.png', 'Cogmap2/images/cogmap2-1.png', 'Nadir/images/nadir-1.png', 'Oshan/images/oshan-1.png'];
 const root = '';
 //https://leergutlarss.github.io/goonstation-interactive-map/
 function createNodes(imageSource) {
