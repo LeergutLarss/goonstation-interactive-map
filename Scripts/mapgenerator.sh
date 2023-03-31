@@ -2,7 +2,6 @@
 cd ~/ss13/goonstation-interactive-map/
 
 mapName=()
-directory=()
 
 for d in ./*/
 do 
@@ -12,7 +11,6 @@ do
     else
         
         d="${d%"${d##*[!/]}"}" # extglob-free multi-trailing-/ trim
-        directory+=($d)
         d="${d##*/}"                  # remove everything before the last /
         d=${d:-/} 
         d=${d,}
@@ -25,7 +23,5 @@ cd ~/ss13/goonstation/
 
 for d in ${mapName[@]}
 do    
-        i=0
-        dmm-tools minimap ./maps/$d.dmm -o ~/ss13/goonstation-interactive-map/${directory[i]}/images/ --enable only-pipenet
-        i=$i+1
+        dmm-tools minimap ./maps/$d.dmm -o ~/ss13/goonstation-interactive-map/DMM-tools/Images --enable only-pipenet
 done    
